@@ -5,4 +5,12 @@ build:
   tools:
     python: "3.8"
 sphinx:
-  fail_on_warning: true
+  fail_on_warning: false
+python:
+  install:
+  - requirements: docs/requirements.txt
+  - method: pip
+    path: .
+formats: 
+  -pdf
+  -epub
